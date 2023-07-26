@@ -3,6 +3,13 @@
 <head>
   <title>Taekwondo Network</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -36,6 +43,12 @@
   <section class="container my-4">
     <h2>Welcome, User Name!</h2>
     <p>Welcome to your social hub for connecting with other Taekwondo athletes, sharing your journey, and tracking your progress.</p>
+  </section>
+
+  <!-- Google Maps Section -->
+  <section class="container my-4">
+    <h2>Find Local Taekwondo Businesses</h2>
+    <div id="map"></div>
   </section>
 
   <div class="container">
@@ -74,7 +87,16 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+  <!-- Google Maps JavaScript API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
+
 
